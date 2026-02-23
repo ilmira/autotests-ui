@@ -45,4 +45,5 @@ def chromium_page_with_state(initialize_browser_state, playwright: Playwright) -
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context(
         storage_state="browser-state_for_courses.json")  # Указываем файл с сохраненным состоянием
-    return context.new_page()
+    yield context.new_page()
+    browser.close()
