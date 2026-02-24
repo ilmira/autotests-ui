@@ -9,17 +9,17 @@ with sync_playwright() as playwright:
     page.goto("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/login")
 
     # Решение: ожидание загрузки страницы:
-    # page.goto(
+    # pages.goto(
     #     "https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/login",
     #     wait_until='networkidle'  # Ждем завершения сетевых запросов
     # )
 
     # Пытаемся проверить, что несуществующий локатор виден на странице
-    # unknown = page.locator('#unknown')
+    # unknown = pages.locator('#unknown')
     # expect(unknown).to_be_visible()
 
     # Пытаемся ввести текст в кнопку Login
-    # login_button = page.get_by_test_id('login-page-login-button')
+    # login_button = pages.get_by_test_id('login-pages-login-button')
     # login_button.fill('unknown')
 
     # Пытаемся изменить текст заголовка

@@ -17,11 +17,11 @@ with sync_playwright() as playwright:
     password_input.fill("password")
 
     # Нажимаем на кнопку Login
-    login_button = page.get_by_test_id('login-page-login-button')
+    login_button = page.get_by_test_id('login-pages-login-button')
     login_button.click()
 
     # Проверяем, что появилось сообщение об ошибке
-    wrong_email_or_password_alert = page.get_by_test_id('login-page-wrong-email-or-password-alert')
+    wrong_email_or_password_alert = page.get_by_test_id('login-pages-wrong-email-or-password-alert')
     expect(wrong_email_or_password_alert).to_be_visible()
     expect(wrong_email_or_password_alert).to_have_text("Wrong email or password")
 

@@ -30,8 +30,8 @@ with sync_playwright() as playwright:
 # добавлять и удалять обработчики событий динамически
 # listener = lambda request: print(f"Request: {request.url}")
 #
-# page.on("request", listener)  # Добавляем обработчик
-# page.remove_listener("request", listener)  # Убираем обработчик
+# pages.on("request", listener)  # Добавляем обработчик
+# pages.remove_listener("request", listener)  # Убираем обработчик
 
 # Если нужно логировать только определённые запросы, то нужно использовать фильтрацию
 def log_specific_requests(request):

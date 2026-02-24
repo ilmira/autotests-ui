@@ -25,7 +25,7 @@ with sync_playwright() as playwright:
     password_input.fill('password')
 
     # Нажимаем на кнопку Registration
-    registration_button = page.get_by_test_id('registration-page-registration-button')
+    registration_button = page.get_by_test_id('registration-pages-registration-button')
     registration_button.click()
 
     # Сохраняем состояние браузера (куки и localStorage) в файл для дальнейшего использования

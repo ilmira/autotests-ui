@@ -9,7 +9,7 @@ with sync_playwright() as playwright:
     page.goto('https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/registration')
 
     # Проверяем, что кнопка Registration в состоянии disabled
-    registration_button = page.get_by_test_id('registration-page-registration-button')
+    registration_button = page.get_by_test_id('registration-pages-registration-button')
     expect(registration_button).to_be_disabled()
 
     # Заполняем поле email
