@@ -1,6 +1,9 @@
 import pytest
 from playwright.sync_api import Playwright, Page
 
+from elements.button import Button
+from elements.input import Input
+
 
 @pytest.fixture
 def chromium_page(playwright: Playwright) -> Page:
@@ -21,19 +24,19 @@ def initialize_browser_state(playwright: Playwright):
         page.goto('https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/registration')
 
         # Заполняем поле email
-        email_input = page.get_by_test_id('registration-form-email-input').locator('input')
+        email_input = Input(page, 'registration-form-email-input', 'Email')
         email_input.fill('user.name@gmail.com')
 
         # Заполняем поле username
-        username_input = page.get_by_test_id('registration-form-username-input').locator('input')
+        username_input = Input(page, 'registration-form-username-input', 'Username')
         username_input.fill('username')
 
         # Заполняем поле пароль
-        password_input = page.get_by_test_id('registration-form-password-input').locator('input')
+        password_input = Input(page, 'registration-form-password-input', 'Password')
         password_input.fill('password')
 
         # Нажимаем на кнопку Registration
-        registration_button = page.get_by_test_id('registration-pages-registration-button')
+        registration_button = Button(page, 'registration-pages-registration-button', 'Registration')
         registration_button.click()
 
         # Сохраняем состояние браузера (куки и localStorage) в файл для дальнейшего использования
