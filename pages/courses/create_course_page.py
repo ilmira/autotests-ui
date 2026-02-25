@@ -13,14 +13,14 @@ class CreateCoursePage(BasePage):
     def __init__(self, page: Page):
         super().__init__(page)
 
-        self.form = CreateCourseFormComponent(page)
-        self.toolbar = CreateCourseToolbarViewComponent(page)
+        self.create_course_form = CreateCourseFormComponent(page)
+        self.create_course_toolbar_view = CreateCourseToolbarViewComponent(page)
 
         self.image_upload_widget = ImageUploadWidgetComponent(page, 'create-course-preview')
         self.exercises_empty_view = EmptyViewComponent(page, 'create-course-exercises')
         self.exercise_form = CreateCourseExerciseFormComponent(page)
 
-        self.exercises_toolbar = CreateCourseExercisesToolbarViewComponent(page)
+        self.create_course_exercises_toolbar_view = CreateCourseExercisesToolbarViewComponent(page)
 
     def check_visible_exercises_empty_view(self):
         self.exercises_empty_view.check_visible(
