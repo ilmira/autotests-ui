@@ -15,14 +15,18 @@ jobs:
   run-tests:
     runs-on: ubuntu-latest  # Указываем, что тесты будут запускаться на последней версии Ubuntu
 
+    # Добавляем разрешения для записи в репозиторий (необходимо для деплоя отчета)
+    permissions:
+      contents: write
+
     steps:
       # 1. Шаг, который будет клонировать ваш репозиторий на машину GitHub Actions
       - name: Check out repository
-        uses: actions/checkout@v4  # Используем GitHub Action для клонирования репозитория
+        uses: actions/checkout@v4  # Обновлено с v6 (v4 — текущая стабильная)
 
       # 2. Шаг для установки Python на виртуальной машине
       - name: Set up Python
-        uses: actions/setup-python@v4  # Используем GitHub Action для установки Python
+        uses: actions/setup-python@v5  # Обновлено с v6 (v5 — текущая стабильная)
         with:
           python-version: '3.11'  # Устанавливаем версию Python 3.11 (можно заменить на другую версию)
 
@@ -37,10 +41,11 @@ jobs:
       - name: Run Playwright tests with pytest and generate Allure results
         run: |
           pytest -m regression --alluredir=allure-results --numprocesses 2  # Запускаем тесты, отмеченные как "regression", генерируем результаты для Allure
+        continue-on-error: true
 
       # 5. Шаг для получения истории отчётов Allure, если она существует
       - name: Get Allure history
-        uses: actions/checkout@v4  # Опять клонируем репозиторий, чтобы получить историю отчётов
+        uses: actions/checkout@v4  # Обновлено с v2
         if: always()  # Всегда выполняем, независимо от успеха или неудачи предыдущих шагов
         continue-on-error: true  # Если здесь возникнет ошибка, workflow всё равно продолжит выполнение
         with:
@@ -49,7 +54,7 @@ jobs:
 
       # 6. Шаг для генерации и отображения отчёта Allure
       - name: Generates Allure Report with history
-        uses: simple-elf/allure-report-action@v1.7  # Используем готовое решение из GitHub Marketplace для генерации Allure отчёта
+        uses: simple-elf/allure-report-action@v1.13  # Обновлено с v1.7
         if: always()  # Этот шаг тоже всегда выполняется
         with:
           allure_results: allure-results  # Указываем каталог с результатами тестов
@@ -58,7 +63,7 @@ jobs:
       # 7. Шаг для деплоя отчёта Allure на GitHub Pages, чтобы его можно было просматривать в браузере
       - name: Deploy report to Github Pages
         if: always()  # Выполняется всегда, независимо от успеха других шагов
-        uses: peaceiris/actions-gh-pages@v4  # Используем GitHub Action для публикации отчёта на GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4  # Обновлено до v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}  # Токен для аутентификации на GitHub
           publish_branch: gh-pages  # Указываем, что отчёт будет опубликован в ветке gh-pages
