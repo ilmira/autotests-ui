@@ -1,0 +1,13 @@
+2026-03-04 12:48:53,963 | BASE_PAGE | INFO | Opening the url "AppRoute.REGISTRATION"
+2026-03-04 12:48:55,548 | INPUT | INFO | Fill input "Email" to value "user.name@gmail.com"
+2026-03-04 12:48:55,548 | BASE_ELEMENT | INFO | Getting locator with "data-testid=registration-form-email-input" at index "0"
+2026-03-04 12:48:55,602 | INPUT | INFO | Fill input "Username" to value "username"
+2026-03-04 12:48:55,603 | BASE_ELEMENT | INFO | Getting locator with "data-testid=registration-form-username-input" at index "0"
+2026-03-04 12:48:55,651 | INPUT | INFO | Fill input "Password" to value "password"
+2026-03-04 12:48:55,651 | BASE_ELEMENT | INFO | Getting locator with "data-testid=registration-form-password-input" at index "0"
+2026-03-04 12:48:55,686 | BASE_ELEMENT | INFO | Getting locator with "data-testid=registration-page-registration-button" at index "0"
+2026-03-04 12:48:55,686 | BASE_ELEMENT | INFO | Clicking button "Registration"
+2026-03-04 12:48:55,761 | BASE_ELEMENT | INFO | Getting locator with "data-testid=dashboard-toolbar-title-text" at index "0"
+2026-03-04 12:48:55,761 | BASE_ELEMENT | INFO | Checking that text "Dashboard title" is visible
+2026-03-04 12:48:55,932 | BASE_ELEMENT | INFO | Getting locator with "data-testid=dashboard-toolbar-title-text" at index "0"
+2026-03-04 12:48:55,933 | BASE_ELEMENT | INFO | Checking that text "Dashboard title" has text "Dashboard"
