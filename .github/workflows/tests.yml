@@ -15,10 +15,6 @@ jobs:
   run-tests:
     runs-on: ubuntu-latest  # Указываем, что тесты будут запускаться на последней версии Ubuntu
 
-    # Добавляем разрешения для записи в репозиторий (необходимо для деплоя отчета)
-    permissions:
-      contents: write
-
     steps:
       # 1. Шаг, который будет клонировать ваш репозиторий на машину GitHub Actions
       - name: Check out repository
@@ -42,6 +38,31 @@ jobs:
         run: |
           pytest -m regression --alluredir=allure-results --numprocesses 2  # Запускаем тесты, отмеченные как "regression", генерируем результаты для Allure
         continue-on-error: true
+
+      - name: Upload Allure results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: allure-results
+          path: allure-results
+          retention-days: 1
+
+  publish-report:
+    runs-on: ubuntu-latest
+    needs: run-tests
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download Allure results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
 
       # 5. Шаг для получения истории отчётов Allure, если она существует
       - name: Get Allure history
