@@ -1,0 +1,61 @@
+2026-03-04 17:31:31,437 | BASE_PAGE | INFO | Opening the url "AppRoute.DASHBOARD"
+2026-03-04 17:31:33,112 | BASE_ELEMENT | INFO | Getting locator with "data-testid=navigation-navbar-app-title-text" at index "0"
+2026-03-04 17:31:33,112 | BASE_ELEMENT | INFO | Checking that text "UI Course" is visible
+2026-03-04 17:31:33,199 | BASE_ELEMENT | INFO | Getting locator with "data-testid=navigation-navbar-app-title-text" at index "0"
+2026-03-04 17:31:33,200 | BASE_ELEMENT | INFO | Checking that text "UI Course" has text "UI Course"
+2026-03-04 17:31:33,240 | BASE_ELEMENT | INFO | Getting locator with "data-testid=navigation-navbar-welcome-title-text" at index "0"
+2026-03-04 17:31:33,241 | BASE_ELEMENT | INFO | Checking that text "Welcome text" is visible
+2026-03-04 17:31:33,284 | BASE_ELEMENT | INFO | Getting locator with "data-testid=navigation-navbar-welcome-title-text" at index "0"
+2026-03-04 17:31:33,284 | BASE_ELEMENT | INFO | Checking that text "Welcome text" has text "Welcome, username!"
+2026-03-04 17:31:33,313 | BASE_ELEMENT | INFO | Getting locator with "data-testid=logout-drawer-list-item-icon" at index "0"
+2026-03-04 17:31:33,313 | BASE_ELEMENT | INFO | Checking that icon "Icon" is visible
+2026-03-04 17:31:33,336 | BASE_ELEMENT | INFO | Getting locator with "data-testid=logout-drawer-list-item-title-text" at index "0"
+2026-03-04 17:31:33,336 | BASE_ELEMENT | INFO | Checking that text "Title" is visible
+2026-03-04 17:31:33,347 | BASE_ELEMENT | INFO | Getting locator with "data-testid=logout-drawer-list-item-title-text" at index "0"
+2026-03-04 17:31:33,347 | BASE_ELEMENT | INFO | Checking that text "Title" has text "Logout"
+2026-03-04 17:31:33,360 | BASE_ELEMENT | INFO | Getting locator with "data-testid=logout-drawer-list-item-button" at index "0"
+2026-03-04 17:31:33,360 | BASE_ELEMENT | INFO | Checking that button "Button" is visible
+2026-03-04 17:31:33,373 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-drawer-list-item-icon" at index "0"
+2026-03-04 17:31:33,373 | BASE_ELEMENT | INFO | Checking that icon "Icon" is visible
+2026-03-04 17:31:33,385 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-drawer-list-item-title-text" at index "0"
+2026-03-04 17:31:33,385 | BASE_ELEMENT | INFO | Checking that text "Title" is visible
+2026-03-04 17:31:33,396 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-drawer-list-item-title-text" at index "0"
+2026-03-04 17:31:33,396 | BASE_ELEMENT | INFO | Checking that text "Title" has text "Courses"
+2026-03-04 17:31:33,407 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-drawer-list-item-button" at index "0"
+2026-03-04 17:31:33,407 | BASE_ELEMENT | INFO | Checking that button "Button" is visible
+2026-03-04 17:31:33,417 | BASE_ELEMENT | INFO | Getting locator with "data-testid=dashboard-drawer-list-item-icon" at index "0"
+2026-03-04 17:31:33,417 | BASE_ELEMENT | INFO | Checking that icon "Icon" is visible
+2026-03-04 17:31:33,431 | BASE_ELEMENT | INFO | Getting locator with "data-testid=dashboard-drawer-list-item-title-text" at index "0"
+2026-03-04 17:31:33,431 | BASE_ELEMENT | INFO | Checking that text "Title" is visible
+2026-03-04 17:31:33,441 | BASE_ELEMENT | INFO | Getting locator with "data-testid=dashboard-drawer-list-item-title-text" at index "0"
+2026-03-04 17:31:33,441 | BASE_ELEMENT | INFO | Checking that text "Title" has text "Dashboard"
+2026-03-04 17:31:33,453 | BASE_ELEMENT | INFO | Getting locator with "data-testid=dashboard-drawer-list-item-button" at index "0"
+2026-03-04 17:31:33,453 | BASE_ELEMENT | INFO | Checking that button "Button" is visible
+2026-03-04 17:31:33,462 | BASE_ELEMENT | INFO | Getting locator with "data-testid=dashboard-toolbar-title-text" at index "0"
+2026-03-04 17:31:33,462 | BASE_ELEMENT | INFO | Checking that text "Dashboard title" is visible
+2026-03-04 17:31:33,471 | BASE_ELEMENT | INFO | Getting locator with "data-testid=dashboard-toolbar-title-text" at index "0"
+2026-03-04 17:31:33,471 | BASE_ELEMENT | INFO | Checking that text "Dashboard title" has text "Dashboard"
+2026-03-04 17:31:33,484 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-widget-title-text" at index "0"
+2026-03-04 17:31:33,484 | BASE_ELEMENT | INFO | Checking that text "Title" is visible
+2026-03-04 17:31:33,499 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-widget-title-text" at index "0"
+2026-03-04 17:31:33,500 | BASE_ELEMENT | INFO | Checking that text "Title" has text "Courses"
+2026-03-04 17:31:33,510 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-pie-chart" at index "0"
+2026-03-04 17:31:33,511 | BASE_ELEMENT | INFO | Checking that image "Chart" is visible
+2026-03-04 17:31:33,522 | BASE_ELEMENT | INFO | Getting locator with "data-testid=scores-widget-title-text" at index "0"
+2026-03-04 17:31:33,522 | BASE_ELEMENT | INFO | Checking that text "Title" is visible
+2026-03-04 17:31:33,534 | BASE_ELEMENT | INFO | Getting locator with "data-testid=scores-widget-title-text" at index "0"
+2026-03-04 17:31:33,534 | BASE_ELEMENT | INFO | Checking that text "Title" has text "Scores"
+2026-03-04 17:31:33,546 | BASE_ELEMENT | INFO | Getting locator with "data-testid=scores-scatter-chart" at index "0"
+2026-03-04 17:31:33,547 | BASE_ELEMENT | INFO | Checking that image "Chart" is visible
+2026-03-04 17:31:33,557 | BASE_ELEMENT | INFO | Getting locator with "data-testid=students-widget-title-text" at index "0"
+2026-03-04 17:31:33,558 | BASE_ELEMENT | INFO | Checking that text "Title" is visible
+2026-03-04 17:31:33,572 | BASE_ELEMENT | INFO | Getting locator with "data-testid=students-widget-title-text" at index "0"
+2026-03-04 17:31:33,572 | BASE_ELEMENT | INFO | Checking that text "Title" has text "Students"
+2026-03-04 17:31:33,583 | BASE_ELEMENT | INFO | Getting locator with "data-testid=students-bar-chart" at index "0"
+2026-03-04 17:31:33,583 | BASE_ELEMENT | INFO | Checking that image "Chart" is visible
+2026-03-04 17:31:33,594 | BASE_ELEMENT | INFO | Getting locator with "data-testid=activities-widget-title-text" at index "0"
+2026-03-04 17:31:33,594 | BASE_ELEMENT | INFO | Checking that text "Title" is visible
+2026-03-04 17:31:33,605 | BASE_ELEMENT | INFO | Getting locator with "data-testid=activities-widget-title-text" at index "0"
+2026-03-04 17:31:33,605 | BASE_ELEMENT | INFO | Checking that text "Title" has text "Activities"
+2026-03-04 17:31:33,617 | BASE_ELEMENT | INFO | Getting locator with "data-testid=activities-line-chart" at index "0"
+2026-03-04 17:31:33,617 | BASE_ELEMENT | INFO | Checking that image "Chart" is visible
