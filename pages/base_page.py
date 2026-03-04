@@ -18,7 +18,7 @@ class BasePage:
             self.page.goto(url, wait_until='networkidle')
 
     def reload(self):
-        f'Reloading page with url "{self.page.url}"'
+        step = f'Reloading page with url "{self.page.url}"'
         with allure.step(step):
             logger.info(step)
             self.page.reload(wait_until='domcontentloaded')
