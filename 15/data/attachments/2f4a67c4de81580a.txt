@@ -1,0 +1,11 @@
+2026-03-10 16:36:12,387 | BASE_PAGE | INFO | Opening the url "AppRoute.LOGIN"
+2026-03-10 16:36:14,059 | BASE_ELEMENT | INFO | Getting locator with "data-testid=login-form-email-input" at index "0"
+2026-03-10 16:36:14,059 | INPUT | INFO | Fill input "Email" to value "  "
+2026-03-10 16:36:14,171 | BASE_ELEMENT | INFO | Getting locator with "data-testid=login-form-password-input" at index "0"
+2026-03-10 16:36:14,172 | INPUT | INFO | Fill input "Password" to value "password"
+2026-03-10 16:36:14,261 | BASE_ELEMENT | INFO | Getting locator with "data-testid=login-page-login-button" at index "0"
+2026-03-10 16:36:14,261 | BASE_ELEMENT | INFO | Clicking button "Login"
+2026-03-10 16:36:14,378 | BASE_ELEMENT | INFO | Getting locator with "data-testid=login-page-wrong-email-or-password-alert" at index "0"
+2026-03-10 16:36:14,379 | BASE_ELEMENT | INFO | Checking that text "Wrong email or password" is visible
+2026-03-10 16:36:14,417 | BASE_ELEMENT | INFO | Getting locator with "data-testid=login-page-wrong-email-or-password-alert" at index "0"
+2026-03-10 16:36:14,417 | BASE_ELEMENT | INFO | Checking that text "Wrong email or password" has text "Wrong email or password"
