@@ -1,0 +1,12 @@
+2026-03-10 16:28:43,691 | BASE_PAGE | INFO | Opening the url "AppRoute.LOGIN"
+2026-03-10 16:28:45,453 | BASE_ELEMENT | INFO | Getting locator with "data-testid=login-form-email-input" at index "0"
+2026-03-10 16:28:45,453 | INPUT | INFO | Fill input "Email" to value "  "
+2026-03-10 16:28:45,532 | UI_COVERAGE_TRACKER_STORAGE | INFO | Results directory does not exist, creating: /home/runner/work/autotests-ui/autotests-ui/coverage-results
+2026-03-10 16:28:45,533 | BASE_ELEMENT | INFO | Getting locator with "data-testid=login-form-password-input" at index "0"
+2026-03-10 16:28:45,533 | INPUT | INFO | Fill input "Password" to value "password"
+2026-03-10 16:28:45,620 | BASE_ELEMENT | INFO | Getting locator with "data-testid=login-page-login-button" at index "0"
+2026-03-10 16:28:45,620 | BASE_ELEMENT | INFO | Clicking button "Login"
+2026-03-10 16:28:45,738 | BASE_ELEMENT | INFO | Getting locator with "data-testid=login-page-wrong-email-or-password-alert" at index "0"
+2026-03-10 16:28:45,738 | BASE_ELEMENT | INFO | Checking that text "Wrong email or password" is visible
+2026-03-10 16:28:45,768 | BASE_ELEMENT | INFO | Getting locator with "data-testid=login-page-wrong-email-or-password-alert" at index "0"
+2026-03-10 16:28:45,768 | BASE_ELEMENT | INFO | Checking that text "Wrong email or password" has text "Wrong email or password"
